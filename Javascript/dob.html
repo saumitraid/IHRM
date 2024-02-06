@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cdt=new Date();
+        var cy=cdt.getFullYear();
+    </script>
+</head>
+<body>
+    <form>
+        Date of birth
+        <select name="day">
+            <option value="" selected>-Day-</option>
+            <script>
+                for(var d=1; d<=31; d++){
+                    document.write('<option value="'+d+'">'+d+'</option>');
+                }
+            </script>
+        </select>
+        <select name="month">
+            <option value="" selected>-Month-</option>
+            <script>
+                for(var d=1; d<=12; d++){
+                    document.write('<option value="'+d+'">'+d+'</option>');
+                }
+            </script>
+        </select>
+        <select name="year">
+            <option value="" selected>-Year-</option>
+            <script>
+                for(var d=1900; d<=cy; d++){
+                    document.write('<option value="'+d+'">'+d+'</option>');
+                }
+            </script>
+        </select>
+    </form>
+    
+</body>
+</html>

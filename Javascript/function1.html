@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function without parameter and without return
+        function add(){
+            var a=10;
+            var b=5;
+            var c=a+b;
+            document.write("Addition is "+c);
+        }
+        add();
+        // Function with parameter and without return
+        function sub(n1, n2){
+            n1=n1-n2;
+            document.write('<br>Subtraction is '+n1);
+        }
+        sub(12, 4);
+        // Function with parameter and with return
+        function mult(n1, n2){
+            n1=n1*n2;
+            return n1;
+        }
+        var res=mult(12, 4);
+        document.write("<br>Multiplication is "+res);
+    </script>
+</body>
+</html>
