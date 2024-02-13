@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>String Reverse</title>
+<script>
+    function strReverse(){
+        var mystr=document.getElementById('str').value;
+        var strlen=mystr.length;
+        var rev='';
+        for(var i=strlen-1; i>=0; i--){
+            rev=rev+mystr[i];
+        }
+        document.getElementById('msg').innerHTML='Reverse of given string '+rev;
+    }
+</script>
+</head>
+<body>
+    <div class="col-6">
+        <form name="frm">
+            <div class="form-group">
+                <label for="str">Enter a String</label>
+                <input type="text" name="str" id="str" class="form-control">
+            </div>
+                <button type="button" class="btn btn-primary" onclick="strReverse();">Click Here</button>
+        </form>
+        <label for="msg" id="msg"></label>
+    </div>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
